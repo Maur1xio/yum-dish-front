@@ -162,9 +162,11 @@
     flex-direction: column;
     gap: 1em;
     width: 65%;
+    
   }
   .cont__logo {
     position: relative;
+    
   }
   .cont__img__header {
     img {
@@ -250,6 +252,9 @@
     right: -14em;
     transition: transform 0.1s ease;
     transform-style: preserve-3d;
+    &:hover{
+            transform: scale(1.05);
+        }
   }
 
   .title__h1 {
@@ -345,7 +350,7 @@
     }
   } 
 </style>
-
+<!-- 
 <script>
   const imageContainer = document.querySelector(".cont__logo");
   const image = imageContainer.querySelector(".logo__img");
@@ -371,4 +376,4 @@
     image.style.transform =
       "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
   });
-</script>
+</script> -->

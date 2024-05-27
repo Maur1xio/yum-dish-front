@@ -157,10 +157,14 @@
         padding: 1em 2em;
         min-height: 140px;
         gap: 2em;
+        transition: transform .2s ease;
         .cont__img__benefit{
             img{
                 width: 70px;
             }
+        }
+        &:hover{
+            transform: translateY(-15px);
         }
         .cont__info__benefit{
             font-size: 1.3em;
@@ -230,10 +234,9 @@
 
 
 
-
+<!-- 
 
 <script>
-    // Función para aplicar el efecto de rotación en respuesta al movimiento del ratón
     function applyRotationEffect(container, event) {
       const rect = container.getBoundingClientRect();
       const x = event.clientX - rect.left;
@@ -262,7 +265,7 @@
         item.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
       });
     });
-  </script>
+  </script> -->
   
 
 
