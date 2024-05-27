@@ -1,0 +1,374 @@
+---
+
+---
+
+<header id="inicio" class="header">
+  <!-- ABSOLUTE -->
+  <div class="table__img cont__img__header">
+    <img src="/img/table.png" alt="" />
+  </div>
+  <div class="img1__img cont__img__header">
+    <img src="/img/soap.png" alt="" />
+  </div>
+  <div class="img2__img cont__img__header">
+    <img src="/img/dish2.png" alt="" />
+  </div>
+  <div class="img3__img cont__img__header">
+    <img src="/img/pankeke.png" alt="" />
+  </div>
+
+  <div class="img__back__1 img__back cont__img__header">
+    <img src="/img/aji-amarillo.png" alt="" />
+  </div>
+  <div class="img__back__2 img__back cont__img__header">
+    <img src="/img/coco.png" alt="" />
+  </div>
+  <div class="img__back__3 img__back cont__img__header">
+    <img src="/img/lemon.png" alt="" />
+  </div>
+  <div class="img__back__4 img__back cont__img__header">
+    <img src="/img/palta.png" alt="" />
+  </div>
+  <div class="img__back__5 img__back cont__img__header">
+    <img src="/img/tomate.png" alt="" />
+  </div>
+
+
+  <div class="cont__title">
+    <h1 class="title__h1">
+      <span>Cocina</span>
+      con <span>lo que
+        tienes</span>, en cualquier momento y lugar
+    </h1>
+
+    <div class="cont__buttons">
+      <a href="https://play.google.com/" target="_blank">
+        <button>
+          <p>Descargar</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-android"
+            width="44"
+            height="44"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M4 10l0 6"></path>
+            <path d="M20 10l0 6"></path>
+            <path
+              d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0"
+            ></path>
+            <path d="M8 3l1 2"></path>
+            <path d="M16 3l-1 2"></path>
+            <path d="M9 18l0 3"></path>
+            <path d="M15 18l0 3"></path>
+          </svg>
+        </button>
+      </a>
+      <a  href="https://www.apple.com/la/app-store" target="_blank">
+        <button>
+          <p>Descargar</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-apple"
+            width="44"
+            height="44"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z"
+            ></path>
+            <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2"></path>
+          </svg>
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <div class="cont__logo">
+    <div class="pizza__gif cont__img__header">
+      <img src="/gif/pizza-humo.gif" alt="" />
+    </div>
+    <div class="logo__img cont__img__header">
+      <img src="/img/logo.png" alt="" />
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    width: 100%;
+    min-height: 738px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6em;
+  }
+  .img__back{
+    position: absolute;
+    z-index: -1;
+    width: 45px;
+    opacity: .5;
+  }
+  .img__back__1{
+    left:0;
+    bottom: 30em;
+    animation: moveAndRotateLeftRight 30s ease infinite;
+  }
+  .img__back__2{
+    width: 60px;
+    right:0em;
+    bottom: 12em;
+    animation: moveAndRotateRightLeft 10s linear infinite;
+
+  }
+  .img__back__3{
+    bottom:0;
+    animation: moveAndRotateDownUp 20s linear infinite;
+    right: 60%;
+
+  }
+  .img__back__4{
+    top: 0;
+    animation: moveAndRotateUpDown 30s linear infinite;
+    right: 41%;
+  }
+  .img__back__5{
+    width: 70px;
+    top:-2em;
+    left: -2em;
+    animation: moveAndRotateDiagonal 10s linear infinite;
+  }
+
+
+  .cont__title {
+    z-index: 2;
+    padding-left: 6.5em;
+    padding-bottom: 8em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 65%;
+  }
+  .cont__logo {
+    position: relative;
+  }
+  .cont__img__header {
+    img {
+      width: 100%;
+    }
+  }
+  .table__img {
+    position: absolute;
+    bottom: -220px;
+    left: -120px;
+    width: 2000px;
+  }
+  .cont__buttons {
+    gap: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    a {
+      text-decoration: none;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      padding: 0.5em 2em;
+      border: none;
+      border-radius: 5px;
+      background-color: #eb7704;
+      box-shadow: 0 5px 0 0 #7b3e00;
+      color: #fff;
+      font-size: 1em;
+      font-weight: 700;
+      svg {
+        fill: #9f2c2c;
+        stroke: #fff;
+      }
+      cursor: pointer;
+      transition: transform 0.1s;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+  .img1__img,
+  .img2__img,
+  .img3__img {
+    width: 220px;
+    position: absolute;
+  }
+  .img1__img {
+    bottom: 2em;
+    left: 5em;
+    transform-origin: center bottom;
+    animation: rotateAnimation1 2s cubic-bezier(0.42, 0, 0.58, 1) infinite
+      alternate;
+  }
+  .img2__img {
+    bottom: 3.5em;
+    left: 32em;
+    transform-origin: center bottom;
+    animation: rotateAnimation2 2s cubic-bezier(0.42, 0, 0.58, 1) infinite
+      alternate;
+  }
+  .img3__img {
+    bottom: 4em;
+    right: -7em;
+  }
+  .cont__logo {
+    width: 100px;
+    height: 100px;
+  }
+  .pizza__gif {
+    width: 700px;
+    position: absolute;
+    bottom: -18em;
+    right: -23em;
+  }
+  .logo__img {
+    width: 520px;
+    position: absolute;
+    top: -18em;
+    right: -14em;
+    transition: transform 0.1s ease;
+    transform-style: preserve-3d;
+  }
+
+  .title__h1 {
+    position: relative;
+    z-index: 99;
+    text-align: left;
+    font-family: "PermanentMarker";
+    font-size: 4em;
+    font-weight: 700;
+    color: rgb(253, 170, 37);
+    span {
+      font-family: "PermanentMarker";
+      font-weight: 800;
+      color: rgb(235, 119, 4);
+    }
+  }
+
+  @media (max-width: 1270px) {
+    .img1__img,
+    .img2__img,
+    .img3__img {
+      width: 180px;
+    }
+    .img2__img {
+      left: 25em;
+    }
+    .title__h1 {
+      font-size: 3em;
+    }
+    .cont__title{
+        padding-left: 5em;
+    }
+    
+  }
+  @media (max-width: 1080px) {
+    .img1__img,
+    .img2__img,
+    .img3__img {
+      display: none;
+    }
+    .cont__buttons{
+        button{
+        gap: .5em;
+            font-size: .9em;
+            svg {
+                width:50px;
+            }
+        }
+    }
+    .header {
+      flex-direction: column;
+      gap: 0;
+      .cont__logo {
+        position: absolute;
+        bottom: 14em;
+        .logo__img {
+          width: 370px;
+          top: -11em;
+          right: -8.8em;
+        }
+        .pizza__gif {
+          width: 720px;
+          bottom: -13em;
+          right: -23.2em;
+        }
+      }
+      .cont__title {
+        margin-top: 2em;
+        width: 100%;
+        padding: 0;
+        .cont__buttons {
+          justify-content: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0 .5em;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 440px){
+    .cont__title{
+        margin-top: 6em !important;
+    }
+    .cont__buttons{
+        margin-top: 1em;
+        flex-direction: column;
+    }
+    .logo__img{
+        display: none;
+    }
+  } 
+</style>
+
+<script>
+  const imageContainer = document.querySelector(".cont__logo");
+  const image = imageContainer.querySelector(".logo__img");
+
+  imageContainer.addEventListener("mousemove", (e) => {
+    const rect = imageContainer.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const deltaX = x - centerX;
+    const deltaY = y - centerY;
+
+    const rotateX = (deltaY / centerY) * 5; // Ajusta el valor para un efecto más o menos pronunciado
+    const rotateY = (-deltaX / centerX) * 5; // Ajusta el valor para un efecto más o menos pronunciado
+
+    image.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1, 1, 1)`;
+  });
+
+  imageContainer.addEventListener("mouseleave", () => {
+    image.style.transform =
+      "perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)";
+  });
+</script>

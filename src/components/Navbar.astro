@@ -1,0 +1,145 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <img src="/img/logo.png" alt="">
+  </div>
+  <div class="navbar-toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+  <ul class="navbar-menu">
+    <li class="navbar-item">
+      <a href="#inicio" class="navbar-link">Inicio</a>
+    </li>
+    <li class="navbar-item">
+      <a href="#beneficios" class="navbar-link">Beneficios</a>
+    </li>
+    <li class="navbar-item">
+      <a href="#como-funciona" class="navbar-link">Cómo funciona</a>
+    </li>
+    <li class="navbar-item">
+      <a href="#testimonios" class="navbar-link">Testimonios</a>
+    </li>
+    <li class="navbar-item">
+      <a href="#preguntas" class="navbar-link">Preguntas</a>
+    </li>
+  </ul>
+</nav>
+<div class="hidden__div"></div>
+<style>
+    .hidden__div{
+        height: 64px;
+    }
+  .navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0 2em;
+  }
+
+  .navbar-brand {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    img{
+        width: 70px;
+    }
+  }
+
+  .navbar-menu {
+    list-style: none;
+    display: flex;
+  }
+
+  .navbar-item {
+    margin-left: 2rem;
+  }
+
+  .navbar-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition:
+      color 0.3s,
+      transform 0.3s;
+  }
+
+  .navbar-link:hover {
+    color: #ffcc80; /* Un tono más claro de naranja */
+    transform: scale(1.1);
+  }
+
+  /* Estilos para dispositivos móviles */
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .navbar-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition:
+      transform 0.3s,
+      background-color 0.3s;
+  }
+
+  .navbar-toggle.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #ff9800;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 1rem 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-menu.active {
+      display: flex;
+    }
+
+    .navbar-item {
+      margin: 1rem 0;
+      text-align: center;
+    }
+
+    .navbar-toggle {
+      display: flex;
+    }
+  }
+</style>
+
+<script>
+document.getElementById('mobile-menu').addEventListener('click', function () {
+    const menu = document.querySelector('.navbar-menu');
+    const toggle = document.querySelector('.navbar-toggle');
+    menu.classList.toggle('active');
+    toggle.classList.toggle('active');
+});
+
+</script>

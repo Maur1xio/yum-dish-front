@@ -1,0 +1,273 @@
+
+
+
+
+
+<section id="beneficios">
+
+    <!--  -->
+    <div class="back__img cont__img__section">
+        <img src="/img/chica1.png" alt="chica cocinando" />
+      </div>
+
+    <header>
+        <div class="subtitle__header">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-point-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" stroke-width="0" fill="#fff" />
+            </svg>
+            <h2>BENEFICIOS</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-point-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 7a5 5 0 1 1 -4.995 5.217l-.005 -.217l.005 -.217a5 5 0 0 1 4.995 -4.783z" stroke-width="0" fill="#fff" />
+            </svg>
+        </div>
+
+        <div class="title__header">
+            <h1>Beneficios que ofrecemos</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="cont__benefits__main">
+          
+            <div class="benefit__main">
+                <div class="cont__img__benefit">
+                    <img src="/img/piezas.png" alt="piezas">
+                </div>
+                <div class="cont__info__benefit">
+                    <p>Facilita la programación y organización de platillos</p>
+                </div>
+            </div>
+            <div class="benefit__main">
+                <div class="cont__img__benefit">
+                    <img src="/img/ensalada.png" alt="piezas">
+                </div>
+                <div class="cont__info__benefit">
+                    <p>Reduce el desperdicio de alimentos</p>
+                </div>
+            </div>
+            <div class="benefit__main">
+                <div class="cont__img__benefit">
+                    <img src="/img/flechas.png" alt="piezas">
+                </div>
+                <div class="cont__info__benefit">
+                    <p>Proporciona opciones de sustitutos adecuados</p>
+                </div>
+            </div>
+            <div class="benefit__main">
+                <div class="cont__img__benefit">
+                    <img src="/img/control.png" alt="piezas">
+                </div>
+                <div class="cont__info__benefit">
+                    <p>Controla los alimentos de la casa</p>
+                </div>
+            </div>
+            <div class="benefit__main">
+                <div class="cont__img__benefit">
+                    <img src="/img/foco.png" alt="piezas">
+                </div>
+                <div class="cont__info__benefit">
+                    <p>Ofrece sugerencias de recetas personalizadas</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</section>
+
+
+
+<style>
+
+    section {
+        position: relative;
+        overflow: hidden;
+        background-color: #f2bb46;
+        padding: 6em 5em;
+        border-bottom:8px dashed #b12000;
+
+    }
+   
+    header {
+        position: relative;
+        .subtitle__header{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            h2{
+                font-size: .9em;
+                color: #fff;
+                font-weight: 900;
+
+            }
+            svg{
+                stroke: #fff;
+                width: 20px;
+            }
+        }
+        .title__header{
+            h1{
+                font-family: "PermanentMarker";
+                font-size: 3em;
+                color: #eb7704;
+                text-shadow: 2px  2px 0px #ffffff;
+            }
+        }
+    }
+
+    .cont__img__section{
+        position: absolute;
+        width: 160vh;
+        top: -20em;
+        right: 13%;
+        img{
+            width: 100%;
+        }
+    }
+    main{
+        position: relative;
+        
+    }
+    .cont__benefits__main{
+        margin-top: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1.8em 3em;
+    }
+    .benefit__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+    }
+    .benefit__main{
+        width: 40%;
+        background-color: #fef7f0;
+        box-shadow: 0 0 0px 5px #ff942a;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 2em;
+        min-height: 140px;
+        gap: 2em;
+        .cont__img__benefit{
+            img{
+                width: 70px;
+            }
+        }
+        .cont__info__benefit{
+            font-size: 1.3em;
+            p{
+                text-align: center;
+                width: 100%;
+            }
+        }
+    }
+    
+    @media (max-width: 1050px){
+        .cont__benefits__main{
+            justify-content: space-between;
+            gap: 1.5em;
+            .benefit__main{
+                width: 48%;
+            }
+            
+        }
+        .cont__img__benefit{
+            img{
+                width: 60px !important;
+            }
+        }
+        .cont__info__benefit{
+            gap: 1em;
+            p{
+                text-align: center;
+                width: 100%;
+                font-size: .8em;
+            }
+        }
+    } 
+    @media (max-width: 780px){
+        section{
+            padding: 3em 1em;
+        }
+        .title__header{
+            h1{
+                font-size: 2em !important;
+            }
+        }
+        .cont__benefits__main{
+            gap: 1.5em;
+            .benefit__main{
+                width:100%;
+            }
+            
+        }
+        .benefit__main{
+            justify-content: start;
+            min-height: auto;
+        }
+        .cont__info__benefit{
+            p{
+                font-size: .6em;
+            }
+        }
+        
+    } 
+
+</style>
+
+
+
+
+
+
+
+
+
+<script>
+    // Función para aplicar el efecto de rotación en respuesta al movimiento del ratón
+    function applyRotationEffect(container, event) {
+      const rect = container.getBoundingClientRect();
+      const x = event.clientX - rect.left;
+      const y = event.clientY - rect.top;
+  
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+  
+      const deltaX = x - centerX;
+      const deltaY = y - centerY;
+  
+      const rotateX = (deltaY / centerY) * 15; // Ajusta el valor para un efecto más o menos pronunciado
+      const rotateY = (-deltaX / centerX) * 15; // Ajusta el valor para un efecto más o menos pronunciado
+  
+      container.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1, 1, 1)`;
+    }
+  
+    // Evento de mousemove para aplicar el efecto de rotación al contenedor de cada elemento con la clase "benefit__main"
+    document.querySelectorAll('.benefit__main').forEach(item => {
+      item.addEventListener('mousemove', event => {
+        applyRotationEffect(item, event);
+      });
+  
+      // Restablece la transformación cuando el mouse sale del contenedor
+      item.addEventListener('mouseleave', () => {
+        item.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+      });
+    });
+  </script>
+  
+
+
+
+
+
+
+

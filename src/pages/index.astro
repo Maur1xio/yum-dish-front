@@ -1,0 +1,232 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Navbar from '../components/Navbar.astro';
+import Benefits from '../components/Benefits.astro';
+import FAQ from '../components/FAQ.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Works from '../components/Works.astro';
+import Footer from '../components/Footer.astro';
+---
+
+
+<Layout title="YumDish">
+	<main>
+		<Navbar />
+		<Header />
+		<Benefits />
+		<Works />
+		<Testimonials />
+		<FAQ />
+		<Footer />
+		
+		
+	</main>
+</Layout>
+
+<style is:global>
+	html {
+		background: rgb(255,238,204);
+	}
+	@font-face{
+		font-family: "Raleway";
+		src: url("/fonts/Raleway-Thin.ttf") format("truetype");
+		font-style: normal;
+		font-display: swap;
+		font-weight: 100;
+	}
+	@font-face{
+		font-family: "Raleway";
+		src: url("/fonts/Raleway-Bold.ttf") format("truetype");
+		font-style: normal;
+		font-display: swap;
+		font-weight: 700;
+	}
+	@font-face{
+		font-family: "Raleway";
+		src: url("/fonts/Raleway-ExtraBold.ttf") format("truetype");
+		font-style: normal;
+		font-display: swap;
+		font-weight: 800;
+	}
+	@font-face{
+		font-family: "Raleway";
+		src: url("/fonts/Raleway-Black.ttf") format("truetype");
+		font-style: normal;
+		font-display: swap;
+		font-weight: 900;
+	}
+	@font-face{
+		font-family: "Raleway";
+		src: url("/fonts/Raleway-ExtraLight.ttf") format("truetype");
+		font-style: normal;
+		font-display: swap;
+		font-weight: 200;
+	}
+	@font-face{
+		font-family: "Raleway";
+		src: url("/fonts/Raleway-Light.ttf") format("truetype");
+		font-style: normal;
+		font-display: swap;
+		font-weight: 100;
+	}
+	@font-face{
+		font-family: "Raleway";
+		src: url("/fonts/Raleway-Medium.ttf") format("truetype");
+		font-style: normal;
+		font-display: swap;
+		font-weight: 500;
+	}
+	@font-face{
+		font-family: "Raleway";
+		src: url("/fonts/Raleway-Regular.ttf") format("truetype");
+		font-style: normal;
+		font-display: swap;
+		font-weight: 300;
+	}
+	@font-face{
+		font-family: "Raleway";
+		src: url("/fonts/Raleway-SemiBold.ttf") format("truetype");
+		font-style: normal;
+		font-display: swap;
+		font-weight: 600;
+	}
+	@font-face{
+		font-family: "PermanentMarker";
+		src: url("/fonts/PermanentMarker-Regular.ttf") format("truetype");
+		font-style: normal;
+		font-display: swap;
+		font-weight:normal
+	}
+</style>
+
+<style is:global>
+
+	*{
+		font-family: "Raleway";
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+	header {
+		scroll-behavior: smooth;
+
+	}
+
+	/* animations */
+	@keyframes rotateAnimation1 {
+    0% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+	}
+	@keyframes rotateAnimation2 {
+    0% {
+        transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+	}
+	@keyframes moveAndRotateLeftRight {
+    0% {
+        transform: translateX(-100%) translateY(0) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translateX(25vw) translateY(-50px) rotate(90deg) scale(1.2);
+    }
+    50% {
+        transform: translateX(50vw) translateY(50px) rotate(180deg) scale(0.8);
+    }
+    75% {
+        transform: translateX(75vw) translateY(-25px) rotate(270deg) scale(1);
+    }
+    100% {
+        transform: translateX(100vw) translateY(0) rotate(360deg) scale(1);
+    }
+}
+	@keyframes moveAndRotateUpDown {
+    0% {
+        transform: translateY(-100%) translateX(0) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translateY(25vh) translateX(-50px) rotate(90deg) scale(1.2);
+    }
+    50% {
+        transform: translateY(50vh) translateX(50px) rotate(180deg) scale(0.8);
+    }
+    75% {
+        transform: translateY(75vh) translateX(-25px) rotate(270deg) scale(1);
+    }
+    100% {
+        transform: translateY(100vh) translateX(0) rotate(360deg) scale(1);
+    }
+}
+@keyframes moveAndRotateRightLeft {
+    0% {
+        transform: translateX(100%) translateY(0) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translateX(-25vw) translateY(-50px) rotate(90deg) scale(1.2);
+    }
+    50% {
+        transform: translateX(-50vw) translateY(50px) rotate(180deg) scale(0.8);
+    }
+    75% {
+        transform: translateX(-75vw) translateY(-25px) rotate(270deg) scale(1);
+    }
+    100% {
+        transform: translateX(-100vw) translateY(0) rotate(360deg) scale(1);
+    }
+
+}
+@keyframes moveAndRotateDownUp {
+    0% {
+        transform: translateY(100%) translateX(0) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translateY(-25vh) translateX(-50px) rotate(90deg) scale(1.2);
+    }
+    50% {
+        transform: translateY(-50vh) translateX(50px) rotate(180deg) scale(0.8);
+    }
+    75% {
+        transform: translateY(-75vh) translateX(-25px) rotate(270deg) scale(1);
+    }
+    100% {
+        transform: translateY(-100vh) translateX(0) rotate(360deg) scale(1);
+    }
+}
+@keyframes moveAndRotateDiagonal {
+    0% {
+        transform: translate(-100%, -100%) rotate(0deg) scale(1);
+    }
+    25% {
+        transform: translate(25vw, 25vh) rotate(90deg) scale(1.2);
+    }
+    50% {
+        transform: translate(50vw, 50vh) rotate(180deg) scale(0.8);
+    }
+    75% {
+        transform: translate(75vw, 75vh) rotate(270deg) scale(1);
+    }
+    100% {
+        transform: translate(100vw, 100vh) rotate(360deg) scale(1);
+    }
+}
+
+</style>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
